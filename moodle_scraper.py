@@ -286,7 +286,8 @@ class Moodle_Scraper:
             Args:
                 name: the path string to clean
             Returns:
-                None 
+                Formatted string
         """
         
         return re.sub(r'[<>:"/|?*]', '', name).strip()
+
